@@ -41,7 +41,6 @@ jobs:
           JFROG_CLI_LOG_LEVEL: DEBUG
 
         run: |
-          curl -fLg https://omerzidk.jfrog.io/artifactory/frogbot/getFrogbot.sh | sh
           ./frogbot create-fix-pull-requests
 
           # Uncomment the below options if you'd like to use them.
