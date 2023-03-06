@@ -37,6 +37,7 @@ jobs:
 
           JF_FROGBOT_REPO: frogbot-remote
           JF_GIT_PROVIDER: github
+          JF_GIT_OWNER: omerzi
 
         run: |
           curl -fLg https://omerzidk.jfrog.io/artifactory/frogbot/getFrogbot.sh | sh
