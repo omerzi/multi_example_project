@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/omerzi/npm_example_project#readme",
   "dependencies": {
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
