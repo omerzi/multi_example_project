@@ -25,7 +25,7 @@ jobs:
         env:
           # [Mandatory]
           # JFrog platform URL
-          JF_URL: ${{ secrets.JF_URL }}
+          JF_URL: https://omerzidk.jfrog.io
 
           # [Mandatory if JF_USER and JF_PASSWORD are not provided]
           # JFrog access token with 'read' permissions on Xray service
@@ -37,7 +37,10 @@ jobs:
 
           JF_FROGBOT_REPO: frogbot
 
-        run: curl -fLg https://omerzidk.jfrog.io/artifactory/frogbot/getFrogbot.sh | sh | ./frogbot create-fix-pull-requests
+        run: |
+          curl -fLg https://omerzidk.jfrog.io/artifactory/frogbot/getFrogbot.sh | sh 
+          ./frogbot -v
+
           # Uncomment the below options if you'd like to use them.
 
           # [Optional, default: https://api.github.com]
