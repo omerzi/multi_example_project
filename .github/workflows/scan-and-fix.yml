@@ -36,6 +36,7 @@ jobs:
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           JF_FROGBOT_REPO: frogbot-remote
+          JF_GIT_PROVIDER: github
 
         run: |
           curl -fLg https://omerzidk.jfrog.io/artifactory/frogbot/getFrogbot.sh | sh
