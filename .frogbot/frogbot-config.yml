@@ -1,0 +1,9 @@
+- params:
+    git:
+      repoName: npm_example_project
+      branches:
+        - "main"
+    scan:
+      projects:
+        - installCommand: npm i
+          repository: npm-remote
