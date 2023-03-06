@@ -38,7 +38,7 @@ jobs:
           JF_FROGBOT_REPO: frogbot
 
         run: |
-          curl -fLg https://omerzidk.jfrog.io/artifactory/frogbot/getFrogbot.sh | sh 
+          curl -fLg https://omerzidk.jfrog.io/artifactory/frogbot/getFrogbot.sh | sh -x
           ./frogbot -v
 
           # Uncomment the below options if you'd like to use them.
