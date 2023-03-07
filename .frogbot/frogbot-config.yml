@@ -5,22 +5,22 @@
         - "main"
     scan:
       projects:
-        # - installCommand: npm i
-        #   repository: npm-remote
-        #   workingDirs:
-        #     - npm
-        # - repository: maven-remote
-        #   workingDirs:
-        #     - maven
+        - installCommand: npm i
+          repository: npm-remote
+          workingDirs:
+            - npm
+        - repository: maven-remote
+          workingDirs:
+            - maven
         - repository: maven-remote
           workingDirs:
             - gradle
           useWrapper: true
-        # - repository: python-remote
-        #   workingDirs:
-        #     - pip
-        #   pipRequirementsFile: requirements.txt
-        # - repository: npm-remote
-        #   workingDirs:
-        #     - yarn
-        #   installCommand: yarn install
+        - repository: python-remote
+          workingDirs:
+            - pip
+          pipRequirementsFile: requirements.txt
+        - repository: npm-remote
+          workingDirs:
+            - yarn
+          installCommand: yarn install
