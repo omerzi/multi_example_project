@@ -1,9 +1,25 @@
 - params:
     git:
-      repoName: npm_example_project
+      repoName: multi_example_project
       branches:
         - "main"
     scan:
       projects:
         - installCommand: npm i
           repository: npm-remote
+          workingDirs:
+            - npm
+        - repository: maven-remote
+          workingDirs:
+            - maven
+        - repository: maven-remote
+          workingDirs:
+            - gradle
+        - repository: python-remote
+          workingDirs:
+            - pip
+          pipRequirementsFile: requirements.txt
+        - repository: npm-remote
+          workingDirs:
+            - yarn
+          installCommand: yarn install
