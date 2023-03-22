@@ -4,6 +4,7 @@
       branches:
         - "main"
     scan:
+      includeAllVulnerabilities: true
       projects:
         - installCommand: npm i
           repository: npm-remote
