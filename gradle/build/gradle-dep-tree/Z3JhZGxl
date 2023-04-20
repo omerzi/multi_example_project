@@ -1,0 +1,27 @@
+{
+  "unresolved": false,
+  "configurations": ["annotationProcessor", "archives", "compileClasspath", "default", "runtimeClasspath", "testAnnotationProcessor", "testCompileClasspath", "testRuntimeClasspath"],
+  "children": {
+    "commons-collections:commons-collections:3.2.1": {
+      "unresolved": false,
+      "configurations": ["compileClasspath", "default", "implementation", "runtimeClasspath", "testCompileClasspath", "testRuntimeClasspath"],
+      "children": {}
+    },
+    "com.fasterxml.jackson.core:jackson-databind:2.10.1": {
+      "unresolved": false,
+      "configurations": ["compileClasspath", "default", "implementation", "runtimeClasspath", "testCompileClasspath", "testRuntimeClasspath"],
+      "children": {
+        "com.fasterxml.jackson.core:jackson-core:2.10.1": {
+          "unresolved": false,
+          "configurations": ["compileClasspath"],
+          "children": {}
+        },
+        "com.fasterxml.jackson.core:jackson-annotations:2.10.1": {
+          "unresolved": false,
+          "configurations": ["compileClasspath"],
+          "children": {}
+        }
+      }
+    }
+  }
+}

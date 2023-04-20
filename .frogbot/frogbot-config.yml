@@ -4,24 +4,6 @@
       branches:
         - "main"
     scan:
-      includeAllVulnerabilities: true
       projects:
-        - installCommand: npm i
-          repository: npm-remote
-          workingDirs:
-            - npm
-        - repository: maven-remote
-          workingDirs:
+        - workingDirs:
             - maven
-        - repository: maven-remote
-          workingDirs:
-            - gradle
-          useWrapper: true
-        - repository: python-remote
-          workingDirs:
-            - pip
-          pipRequirementsFile: requirements.txt
-        - repository: npm-remote
-          workingDirs:
-            - yarn
-          installCommand: yarn install
