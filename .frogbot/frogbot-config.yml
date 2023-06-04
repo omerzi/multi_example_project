@@ -1,9 +1,0 @@
-- params:
-    git:
-      repoName: multi_example_project
-      branches:
-        - "main"
-    scan:
-      projects:
-        - workingDirs:
-            - maven
