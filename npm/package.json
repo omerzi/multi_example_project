@@ -18,6 +18,6 @@
   "homepage": "https://github.com/omerzi/npm_example_project#readme",
   "dependencies": {
     "lodash": "^4.17.21",
-    "minimist": "^1.2.5"
+    "minimist": "^1.2.6"
   }
 }
